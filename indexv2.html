@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Dmello - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white">Derick Dmello</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-300">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors duration-300">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                <a href="#achievements" class="hover:text-cyan-400 transition-colors duration-300">Achievements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-300">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-800">About</a>
+            <a href="#experience" class="block py-2 px-6 text-sm hover:bg-gray-800">Experience</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-gray-800">Projects</a>
+            <a href="#achievements" class="block py-2 px-6 text-sm hover:bg-gray-800">Achievements</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="container mx-auto px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">Hi, I'm Derick Dmello</h1>
+            <p class="text-xl md:text-2xl text-cyan-400 mb-8">Cyber Security Professional & IT Enthusiast</p>
+            <p class="max-w-3xl mx-auto text-gray-400 mb-10">
+                A curiosity-driven enthusiast with a knack for investigating and solving problems. With 3 years of experience in incident response, threat intelligence, and security operations, I'm passionate about building secure and resilient digital environments.
+            </p>
+            <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full transition-transform duration-300 inline-block transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 text-center">
+                    <!-- IMPORTANT: Replace this placeholder with a real photo of you! -->
+                    <img src="https://placehold.co/400x400/1a202c/76e4f7?text=Derick" alt="Derick Dmello" class="rounded-full w-64 h-64 mx-auto mb-6 border-4 border-cyan-400 shadow-lg">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg text-gray-300 mb-6">
+                        I'm based in Albany, New York, and I'm an international candidate with an approved EAD, authorized to work for 3 years without sponsorship. I'm eager to leverage my skills in a challenging and impactful role within a proactive cyber defense environment.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-6">
+                        My background is in enterprise infrastructure management, network and web protocols, and risk and project management. I'm always ready to learn and apply my knowledge to new challenges.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-4">My Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Threat Detection & Analysis</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">SIEM Monitoring (Splunk, Elastic)</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Incident Response</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Enterprise Networking</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Firewall & AD Admin</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Virtualization (VMWare, VirtualBox)</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Cloud (AWS, Azure)</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Compliance (NIST, ISO27001, PCI-DSS)</span>
+                        <span class="bg-gray-700 text-gray-200 text-sm font-medium px-4 py-2 rounded-full">Python & Bash Scripting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Work Experience</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+
+                <!-- Experience 1 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col sm:flex-row items-start gap-6 shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+                    <!-- TODO: Replace this placeholder with the actual company logo -->
+                    <img src="https://placehold.co/80x80/1a202c/76e4f7?text=Logo" alt="Thirdware Logo" class="w-20 h-20 rounded-lg object-contain bg-white p-1 flex-shrink-0">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white">IT Support Technician</h3>
+                        <p class="text-cyan-400 font-semibold">Thirdware Business Solutions</p>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">July 2022 - July 2023 | Mumbai, India</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Managed and resolved over 1000+ IT support tickets with a 95% satisfaction rate.</li>
+                            <li>Spearheaded a project to streamline the onboarding process for new hires.</li>
+                            <li>Reduced system downtime by 20% through proactive maintenance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col sm:flex-row items-start gap-6 shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+                    <!-- TODO: Replace this placeholder with a generic remote work logo -->
+                    <img src="https://placehold.co/80x80/1a202c/76e4f7?text=Remote" alt="Remote Company Logo" class="w-20 h-20 rounded-lg object-contain bg-white p-1 flex-shrink-0">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white">Cyber Security Engineering Lead Intern</h3>
+                        <p class="text-cyan-400 font-semibold">Cyber Security Internship</p>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">May 2022 - July 2022 | Remote, US</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Led and mentored a global cohort of 900+ interns, standardizing evaluation processes.</li>
+                            <li>Strengthened detection strategies by exploring Splunk SIEM and the MITRE ATT&CK framework.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-gray-800 rounded-lg p-6 flex flex-col sm:flex-row items-start gap-6 shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
+                    <!-- TODO: Replace this placeholder with the actual company logo -->
+                    <img src="https://placehold.co/80x80/1a202c/76e4f7?text=Wipro" alt="Wipro Logo" class="w-20 h-20 rounded-lg object-contain bg-white p-1 flex-shrink-0">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-white">IT Help Desk Technician</h3>
+                        <p class="text-cyan-400 font-semibold">Wipro</p>
+                        <p class="text-gray-400 text-sm mt-1 mb-3">May 2021 - June 2022 | Mumbai, India</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Provided technical assistance and support for incoming queries and issues related to computer systems.</li>
+                            <li>Resolved an average of 30+ tickets daily, consistently exceeding team targets.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e4f7?text=Project" alt="Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Wearable Technology Security</h3>
+                        <p class="text-gray-400 mb-4">A research project from my Master's program focusing on the security vulnerabilities in modern wearable devices.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e4f7?text=Project" alt="Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Threat Intelligence Report</h3>
+                        <p class="text-gray-400 mb-4">An in-depth analysis and report on the cyber threat landscape of the global shipping industry.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e4f7?text=Project" alt="Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Homelab Enterprise IT</h3>
+                        <p class="text-gray-400 mb-4">Designed and built a home laboratory to simulate an enterprise-level IT infrastructure for testing and learning purposes.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                 <!-- Project 4 -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e4f7?text=Project" alt="Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Open Source WebApp Pentesting</h3>
+                        <p class="text-gray-400 mb-4">A project focused on vulnerability testing and penetration testing of open-source web applications.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                 <!-- Project 5 -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e4f7?text=Project" alt="Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Citrix Virtualization</h3>
+                        <p class="text-gray-400 mb-4">A research project on implementing and managing Citrix virtualization technologies.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                 <!-- Project 6 -->
+                <div class="bg-gray-700 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1a202c/76e4f7?text=Project" alt="Project" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Cyber Defence Operations</h3>
+                        <p class="text-gray-400 mb-4">A two-part project covering theoretical and practical operations in cyber defense scenarios.</p>
+                        <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">View Details &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Achievements & Certifications</h2>
+            
+            <!-- Certifications -->
+            <h3 class="text-3xl font-bold text-center text-cyan-400 mb-8">Certifications</h3>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+                <div class="bg-gray-700 p-4 rounded-lg text-center">EC-Council Certified Ethical Hacker - Master (CEH-M)</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">(ISC)² Certified in Cybersecurity (CC)</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">CompTIA Security+</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">AWS Security</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">ISO/IEC 27001:2022: Information Security Associate</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">Qualys Certified PCI Compliance Specialist</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">Cisco CyberOps Associate</div>
+                <div class="bg-gray-700 p-4 rounded-lg text-center">EC-Council Certified SOC Analyst (CSA) (Pursuing)</div>
+            </div>
+
+            <!-- Letters of Recommendation -->
+            <h3 class="text-3xl font-bold text-center text-cyan-400 mb-8">Letters of Recommendation</h3>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- LOR 1 -->
+                <div class="bg-gray-700 rounded-lg p-6 text-center flex flex-col items-center justify-center">
+                    <h4 class="text-xl font-semibold mb-2">Recommendation 1</h4>
+                    <p class="text-gray-400 mb-4">A letter of recommendation from [Professor/Manager Name].</p>
+                    <!-- 
+                        TODO: 
+                        1. Place your LOR PDF file in a folder (e.g., 'assets/lor1.pdf').
+                        2. Change the href below to point to that file.
+                    -->
+                    <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded-full transition-transform duration-300 inline-block transform hover:scale-105">View PDF</a>
+                </div>
+                <!-- LOR 2 -->
+                <div class="bg-gray-700 rounded-lg p-6 text-center flex flex-col items-center justify-center">
+                    <h4 class="text-xl font-semibold mb-2">Recommendation 2</h4>
+                    <p class="text-gray-400 mb-4">A letter of recommendation from [Professor/Manager Name].</p>
+                    <!-- 
+                        TODO: 
+                        1. Place your LOR PDF file in a folder (e.g., 'assets/lor2.pdf').
+                        2. Change the href below to point to that file.
+                    -->
+                    <a href="#" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded-full transition-transform duration-300 inline-block transform hover:scale-105">View PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Get In Touch</h2>
+            <p class="text-center text-gray-400 max-w-2xl mx-auto mb-12">
+                I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to connect, feel free to reach out!
+            </p>
+            <div class="text-center">
+                <a href="mailto:dmellogab.derick@gmail.com" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-full transition-transform duration-300 inline-block transform hover:scale-105">
+                    Say Hello
+                </a>
+            </div>
+             <div class="flex justify-center mt-12 space-x-6">
+                <!-- TODO: Replace "#" with the actual link to your GitHub profile -->
+                <a href="#" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="GitHub">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="https://linkedin.com/in/dmelloderick" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="LinkedIn">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <p>&copy; 2024 Derick Dmello. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Designed with <a href="https://tailwindcss.com/" class="hover:text-cyan-400">Tailwind CSS</a> and love ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Link to your external JS file -->
+    <script src="index.js"></script>
+
+</body>
+</html>

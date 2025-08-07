@@ -1,0 +1,19 @@
+/* Custom styles for the portfolio */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Adjusted section height for better content flow */
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: auto;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
